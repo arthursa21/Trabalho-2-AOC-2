@@ -1,1 +1,1 @@
-# Trabalho-2---AOC-2
+# Trabalho-2-AOC-2
