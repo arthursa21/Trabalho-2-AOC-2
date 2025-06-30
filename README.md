@@ -11,5 +11,5 @@ Este é um projeto educacional do curso de Ciência da Computação feito na dis
 3. Rode o seguinte comando no terminal com os parâmetros para o seu teste (caso for executar no terminal windows, retire o número 3 na palavra python):
 
  ```bash
-   python3 simulador_cache.py <nsets> <bsize> <assoc> <substituição> <flagOut> <arquivo_de_entrada>
+   python3 simulador_cache.py <nsets> <bsize> <assoc> <substituição> <flagsaida> <arquivo_de_entrada>
    ```
