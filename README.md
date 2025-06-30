@@ -1,4 +1,4 @@
-# [PT-BR] Simulador de Cache
+# Simulador de Cache
 
 Este é um projeto educacional do curso de Ciência da Computação feito na disciplina de Arquitetura e Organização de Computadores II (Universidade Federal de Pelotas).
 
