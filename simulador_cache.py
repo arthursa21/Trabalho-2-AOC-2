@@ -1,3 +1,7 @@
+"""
+O módulo sys fornece acesso a variáveis e funções que interagem com o interpretador Python
+e o com o sistema operacional.
+"""
 import sys
 from controlador_cache import ControladorCache
 

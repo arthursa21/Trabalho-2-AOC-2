@@ -1,3 +1,7 @@
+"""
+O módulo random em Python serve para gerar números pseudoaleatórios.
+E realizar outras operações relacionadas à aleatoriedade.
+"""
 import random
 
 class ConjuntoCache:
