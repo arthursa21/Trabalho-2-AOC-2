@@ -5,12 +5,8 @@ class ControladorCache:
     Define a estrutura e o comportamento geral da cache.
     Esta classe coordena os conjuntos e processa os endereços de memória.
     """
-    def __init__(self, num_conjuntos, tam_bloco, associatividade, politica_subst):
-        """
-        Inicializa o controlador da cache.
+    def __init__(self, num_conjuntos, tam_bloco, associatividade, politica_subst):  #Inicializa o controlador da cache.
         
-        Argumentos:
-        """
         self.num_conjuntos = num_conjuntos # Número de conjuntos na cache
         self.tam_bloco = tam_bloco # Tamanho do bloco de dados em bytes
         self.associatividade = associatividade # Número de vias (linhas) por conjunto
@@ -46,11 +42,9 @@ class ControladorCache:
 
         return resultado
 
-    def esta_cheia(self):
-        """Verifica se todas as linhas da cache estão ocupadas."""
+    def esta_cheia(self):  #Verifica se todas as linhas da cache estão ocupadas.
         return self.linhas_ocupadas >= self.total_linhas_cache
 
     @staticmethod
-    def eh_potencia_de_dois(numero):
-        """Método estático para verificar se um número é uma potência de 2."""
+    def eh_potencia_de_dois(numero):  #Método estático para verificar se um número é uma potência de 2.
         return numero > 0 and (numero & (numero - 1)) == 0

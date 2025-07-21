@@ -40,16 +40,6 @@ def executar_simulacao():
     if flag_saida not in [0, 1]:
         print("ERRO: Flag de saída inválida. Utilize 0 ou 1.")
         sys.exit(1)
-
-    # Exibição dos parâmetros de simulação configurados
-    #print("--- Parâmetros da Simulação de Cache ---")
-    #print(f"Número de Conjuntos: {num_conjuntos}")
-    #print(f"Tamanho do Bloco: {tam_bloco} bytes")
-    #print(f"Associatividade: {associatividade}")
-    #print(f"Política de Substituição: {politica}")
-    #print(f"Formato de Saída: {flag_saida}")
-    #print(f"Arquivo de Trace: {arquivo_trace}")
-    #print("----------------------------------------")
     
     # Estrutura para armazenar estatísticas: [hits, miss_comp, miss_cap, miss_conf]
     estatisticas = [0, 0, 0, 0]

@@ -10,13 +10,7 @@ class ConjuntoCache:
     Gerencia a lógica de inserção e substituição de blocos de dados.
     """
     def __init__(self, associatividade, politica_substituicao):
-        """
-        Inicializa o conjunto da cache.
         
-        Args:
-            associatividade (int): O número de vias (linhas) no conjunto.
-            politica_substituicao (str): A política a ser usada ('L' para LRU, 'F' para FIFO, 'R' para Random).
-        """
         self.vias = [{'tag': None, 'valido': False} for _ in range(associatividade)]
         self.politica_substituicao = politica_substituicao
         self.ordem_acesso = []  # Fila para controlar a ordem de uso para LRU e FIFO
@@ -53,10 +47,10 @@ class ConjuntoCache:
         """
         indice_via_vitima = -1
 
-        if self.politica_substituicao == 'R':  # Política Aleatória (Random)
+        if self.politica_substituicao == 'R':  #RANDOM
             indice_via_vitima = random.randint(0, len(self.vias) - 1)
         
-        elif self.politica_substituicao in ['F', 'L']:  # Políticas FIFO ou LRU
+        elif self.politica_substituicao in ['F', 'L']:  #FIFO ou LRU
             # Remove a via mais antiga (primeiro elemento da fila)
             indice_via_vitima = self.ordem_acesso.pop(0)
             # Adiciona a nova via (agora a mais recente) ao final da fila
